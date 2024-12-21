@@ -1,6 +1,13 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environment(\.locale, Locale(identifier: "en_CA"))
+    }
+}
+
 struct ContentView: View {
     // Properties
     @State private var backgroundColor: Color = Color(red: 0.2745, green: 0.6157, blue: 0.8314)
@@ -27,7 +34,7 @@ struct ContentView: View {
                 VStack {
                     // Share Button
                     Button(action: shareIcon) {
-                        Label("Share", systemImage: "square.and.arrow.up")
+                        Label(NSLocalizedString("Share", comment: "Share button label"), systemImage: "square.and.arrow.up")
                     }
 
                     // Export Button
@@ -59,7 +66,7 @@ struct ContentView: View {
 
                 // Base Colour Picker
                 VStack(alignment: .leading) {
-                    Text("Base Colour:")
+                    Text("Background Colour:")
                         .font(.headline)
                     ColorPicker("Select Background Colour", selection: $backgroundColor)
                 }
