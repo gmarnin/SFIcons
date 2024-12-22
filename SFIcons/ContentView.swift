@@ -36,11 +36,13 @@ struct ContentView: View {
                     Button(action: shareIcon) {
                         Label(NSLocalizedString("Share", comment: "Share button label"), systemImage: "square.and.arrow.up")
                     }
+                    .keyboardShortcut("s")
 
                     // Export Button
                     Button(action: saveIconToFileSystem) {
                         Label("Export", systemImage: "folder")
                     }
+                    .keyboardShortcut("e")
                     .padding()
                 }
             }
