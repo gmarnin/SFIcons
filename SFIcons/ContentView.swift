@@ -31,7 +31,7 @@ struct ContentView: View {
                         .frame(width: iconSize * 0.5, height: iconSize * 0.5)
                 }
 
-                VStack {
+                HStack {
                     // Share Button
                     Button(action: shareIcon) {
                         Label(NSLocalizedString("Share", comment: "Share button label"), systemImage: "square.and.arrow.up")
