@@ -4,6 +4,8 @@
 
 An app to build images in the style of macOS icons. Perfect for your self-service system's catalogue (or at least perfect for mine). 
 
+There are over 6000 macOS icons to chose from. To find the icon name, download the [SF Symbols](https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-6.dmg) application from Apple. 
+
 It puts a square with a solid colour and rounded corners and then layers a SFSymbol on top of the square. 
 
 You can either export or share it as a PNG.
